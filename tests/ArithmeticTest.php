@@ -2,31 +2,32 @@
 
 namespace tests;
 
+use PHPUnit\Framework\Attributes\DataProvider;
+
 class ArithmeticTest extends \PHPUnit\Framework\TestCase
 {
-//    /**
-//     * @dataProvider zeroValuesProvider
-//     */
-//    public function testEqualZero($num)
-//    {
-//
-//        $this->assertEquals(0, $num);
-//    }
 
-    public function testEqualZero()
+    #[DataProvider('zeroValuesProvider')]
+    public function testEqualZero($num)
     {
-        $num = 0;
+
         $this->assertEquals(0, $num);
     }
 
-//    public static function zeroValuesProvider(): array
+//    public function testEqualZero()
 //    {
-//        return [
+//        $num = 0;
+//        $this->assertEquals(0, $num);
+//    }
+
+    public static function zeroValuesProvider(): array
+    {
+        return [
 //            [1],
 //            [2],
-//            [0],
-//        ];
-//    }
+            [0],
+        ];
+    }
 
 
 }
