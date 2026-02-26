@@ -1,0 +1,1 @@
+{"version":2,"defects":{"tests\\ArithmeticTest::testEqualZero":8,"tests\\TypeTest::testInt":8,"tests\\TypeTest::testString":7},"times":{"tests\\ArithmeticTest::testEqualZero":0.002,"tests\\TypeTest::testInt":0.003,"tests\\TypeTest::testString":0.002}}
